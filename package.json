@@ -1,0 +1,10 @@
+{
+  "name": "ze-data",
+  "version": "0.0.1",
+  "description": "Ze storage and storage related services",
+  "main": "index.js",
+  "repository": "git@github.com:leonardreidy/ze-data.git",
+  "author": "Leonard M Reidy <leonard.reidy@gmail.com>",
+  "license": "MIT",
+  "private": false
+}

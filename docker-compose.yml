@@ -1,0 +1,21 @@
+version: '3.8'
+
+networks:
+  ze-net:
+   driver: bridge
+   name: ze-net
+
+services:
+  ze-data:
+    container_name: ze-data
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/neo4jdev}
+    image: neo4j:5.15.0-bullseye
+    networks:
+      - ze-net
+    ports:
+      - 7474:7474
+      - 7373:7373
+      - 7687:7687
+    restart: always
+   
